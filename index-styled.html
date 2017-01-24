@@ -12,8 +12,13 @@
 		
 		<!-- you can create styles local to this page by putting them in the following style block -->
 		<style type=text/css>
-			body {
-    background-color: lightblue;
+			#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(lightblue, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightblue, white); /* Standard syntax (must be last) */
 }
 			div {
     border: 1px solid black;
