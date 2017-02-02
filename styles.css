@@ -1,14 +1,14 @@
 
 body {
 
-background color: blue;
+background-color: blue;
 color: red;
 text-align: center}
 
 #main {
 	width: 40%;
 	margin: auto;
-	background color: black;
+	background color: #FAEBD7;
 	padding: 20px;
 }
 
