@@ -3,19 +3,14 @@ html {
 
  body {
 height: 100%;
-margin: 0px;
-padding: 0px;
+margin: 30px;
+border: 25px solid green;
+padding: 25px;
 background-color: lightblue;
 color: white;
 text-align: center}
 
- 
-div {
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
-}
+
 
 			
 			
