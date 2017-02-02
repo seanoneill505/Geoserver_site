@@ -7,6 +7,7 @@ text-align: left;
 }
 
 #title {
+	border: 1px solid black;
 	width: 38%;
 	margin: auto;
 	background-color: #FAEBD7;
