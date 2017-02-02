@@ -2,10 +2,10 @@
 body {
 height: 100%;
 margin: 30px;
-border: 25px White;
+border: 25px;
 padding: 25px;
 
-color: white;
+color: red;
 text-align: center}
 
 #main {
