@@ -8,7 +8,7 @@ text-align: left;
 	border: 1px solid black;
 	width: 38%;
 	margin: auto;
-	background-image: https://earth.nullschool.net/sample.png;
+	background-image: https://earth.nullschool.net/sample.png ("sample.png");
 	text-shadow: 2px 2px grey;
 	padding: 30px;
 	color: black;
