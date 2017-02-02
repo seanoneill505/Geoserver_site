@@ -1,5 +1,23 @@
+html {
+4 height: 100% }
+5
+6 body {
+7 height: 100%;
+8 margin: 0px;
+9 padding: 0px;
+10 background-color: black;
+11 color: #CCCCCC;
+12 text-align: center}
+13
+14 #map_canvas {
+15 width:90%;
+16 height:80%;
+17 margin-left:auto;
+18 margin-right: auto }
+19
+20 .infoBox {
+21 color:black }
 
-<style type=text/css>
 			
 			body {
     background-color: lightblue;
@@ -21,4 +39,4 @@ color: white
 			
 
 
-		</style>
+		
