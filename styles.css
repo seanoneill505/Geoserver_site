@@ -5,6 +5,12 @@ background-color: #FAEBD7;
 color: red;
 text-align: center}
 
+#title {
+	width: 38%;
+	margin: auto;
+	background-color: black;
+}
+
 #main {
 	width: 40%;
 	margin: auto;
