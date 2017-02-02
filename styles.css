@@ -5,9 +5,11 @@ html {
 height: 100%;
 margin: 0px;
 padding: 0px;
- background-color: lightblue;
- color: white;
- text-align: center}
+background-color: lightblue;
+position: absolute;
+color: white;
+margin: auto;
+text-align: center}
 
 div {
     border: 1px solid black;
