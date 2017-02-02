@@ -9,33 +9,12 @@ background-color: lightblue;
 color: white;
 text-align: center}
 
-div {
-    border: 1px solid black;
-    position: center;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-	color: white; 
-}
-
- p {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
+ 
 div {
     width: 300px;
     border: 25px solid green;
     padding: 25px;
     margin: 25px;
-}
-p {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
 }
 
 			
