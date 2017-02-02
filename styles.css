@@ -2,11 +2,18 @@
 body {
 height: 100%;
 margin: 30px;
-border: 25px NavajoWhite;
+border: 25px White;
 padding: 25px;
 background-color: lightblue;
 color: white;
 text-align: center}
+
+#main {
+	width: 40%;
+	margin: auto;
+	background color: white;
+	padding: 20px;
+}
 
 
 
