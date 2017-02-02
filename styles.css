@@ -25,6 +25,12 @@ div {
     padding-bottom: 50px;
     padding-left: 80px;
 }
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
 p {
     margin-top: 100px;
     margin-bottom: 100px;
