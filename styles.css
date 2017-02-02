@@ -16,6 +16,7 @@ text-align: left;
 }
 
 #main {
+	border: 2px solid black;
 	width: 40%;
 	margin: auto;
 	background color: #FAEBD7;
