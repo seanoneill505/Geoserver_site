@@ -18,7 +18,7 @@ text-align: left;
 	border: 2px solid black;
 	width: 70%;
 	margin: auto;
-	background: http://feelgrafix.com/data/background/background-7.jpg ("background-7.jpg");
+	background-image: http://feelgrafix.com/data/background/background-7.jpg ("background-7.jpg");
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
