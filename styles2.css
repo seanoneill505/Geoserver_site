@@ -1,1 +1,27 @@
 
+body {
+background-image: http://c8.alamy.com/comp/D976HB/girls-weekend-vineyard-in-the-background-rose-in-the-hand-sula-fest-D976HB.jpg 
+  ("girls-weekend-vineyard-in-the-background-rose-in-the-hand-sula-fest-D976HB.jpg);
+text-align: left;
+}
+
+#title {
+	border: 3px solid black;
+	width: 50%;
+	margin: auto;
+	background: linear-gradient(white, grey);
+	text-shadow: 2px 2px grey;
+	padding: 30px;
+	color: black;
+}
+
+#main {
+	border: 2px solid black;
+	width: 70%;
+	margin: auto;
+	background-color: #d9d9d9;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top:10px;
+}
