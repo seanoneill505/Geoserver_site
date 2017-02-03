@@ -5,7 +5,7 @@ text-align: left;
 }
 
 #title {
-	border: 1px solid black;
+	border: 3px solid black;
 	width: 50%;
 	margin: auto;
 	background: linear-gradient(white, grey);
