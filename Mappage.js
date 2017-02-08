@@ -3,7 +3,7 @@ function initialize() {
 	var mapOptions = {
 		zoom: 8,
 		center: classroom,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.SATELLITE
 	};
 	var map = new google.maps.Map(
 		document.getElementById("map_canvas"),
