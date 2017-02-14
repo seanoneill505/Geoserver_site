@@ -1,1 +1,38 @@
-holder
+html { 
+	height: 100% }
+
+body { 
+	height: 100%; 
+background: linear-gradient(black, white);
+text-align: center;
+}
+
+
+#map_canvas {
+	width:90%;
+	height:70%;
+	margin-left:auto;
+	margin-right: auto }
+
+
+
+#title {
+	border: 3px solid black;
+	width: 50%;
+	margin: auto;
+	background: linear-gradient(white, grey);
+	text-shadow: 2px 2px grey;
+	padding: 30px;
+	color: black;
+}
+
+#main {
+	border: 2px solid black;
+	width: 70%;
+	margin: auto;
+	background-color: #d9d9d9;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top:10px;
+}
