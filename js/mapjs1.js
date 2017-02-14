@@ -165,6 +165,15 @@ function initialize() {
   },
   {
     "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#00ffff"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
     "elementType": "labels.text.fill",
     "stylers": [
       {
