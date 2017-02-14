@@ -36,3 +36,12 @@ text-align: center;
 	padding-bottom: 20px;
 	padding-top:10px;
 }
+a:link, 
+	a:visited {
+		background-color: #b58942;
+		color: white;
+		padding: 14px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+			}
