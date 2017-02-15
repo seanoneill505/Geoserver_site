@@ -39,7 +39,7 @@ text-align: center;
 a:link, 
 	a:visited {
 		background: linear-gradient(white, grey);
-		color: white;
+		color: black;
 		padding: 14px 25px;
 		text-align: center;
 		text-decoration: none;
