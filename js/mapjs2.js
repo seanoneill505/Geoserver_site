@@ -1,6 +1,6 @@
 function initialize() {
 	var foothills = new google.maps.LatLng(35.1177076,-106.4869905)
-  	Var pinotrailhead = new google.maps.LatLng(35.165335,-106.456333,127)
+  	var pinotrailhead = new google.maps.LatLng(35.165335,-106.456333,127)
 	var mapOptions = {
 		zoom: 12,
 		center: foothills,
