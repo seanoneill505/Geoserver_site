@@ -3,7 +3,7 @@ function initialize() {
   
 	var mapOptions = {
 		zoom: 12,
-		center: classroom,
+		center: foothills,
 		mapTypeId: google.maps.MapTypeId.TERRAIN,
 		styles: [
   {
