@@ -24,6 +24,15 @@ text-align: left;
 	padding-bottom: 20px;
 	padding-top:10px;
 }
+a:link, 
+	a:visited {
+		background: linear-gradient(white, grey);
+		color: black;
+		padding: 14px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+			}
 
 
 
