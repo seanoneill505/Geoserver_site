@@ -194,9 +194,9 @@ function initialize() {
 ]
 	};
 	var pintotrailheadmarker = new google.maps.Marker({
-14 position: pinotrailhead,
-15 title:"Pino Trailhead wilderness gate"
-16 });
+position: pinotrailhead,
+title:"Pino Trailhead wilderness gate"
+});
 	var map = new google.maps.Map(
 		document.getElementById("map_canvas"),
 		mapOptions);
