@@ -46,3 +46,7 @@ a:link,
 		display: inline-block;
 		border: 1px solid black;
 			}
+h4 {
+	font-size: medium;
+	text-align: center;
+	}
