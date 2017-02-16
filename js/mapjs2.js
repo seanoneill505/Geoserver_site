@@ -1,9 +1,9 @@
 function initialize() {
-	var foothills = new google.maps.LatLng(35.1177076,-106.4869905)
-  	var pinotrailhead = new google.maps.LatLng(35.165335,-106.456333,127)
-	var mapOptions = {
+	var pinotrail = new google.maps.LatLng(35.1177076,-106.4869905)
+	var openspace = new google.maps.LatLng(35.165073,-106.4573935)
+	var myOptions = {
 		zoom: 12,
-		center: foothills,
+		center: pinotrail,
 		mapTypeId: google.maps.MapTypeId.TERRAIN,
 		styles: [
   {
@@ -191,13 +191,21 @@ function initialize() {
       }
     ]
   }
-]
-	};
-	var pintotrailhead = new google.maps.Marker({
-position: pinotrailhead,
-title:"Pino Trailhead wilderness gate"
-});
+  ]
+		};
 	var map = new google.maps.Map(
-		document.getElementById("map_canvas"),
-		mapOptions);
+		document.getElementById("map_canvas"), 
+		myOptions);
+
+	var pinotrailMarker = new google.maps.Marker({
+		position: pinotrail,
+		title:"Open Space"
+		});
+	pinotrailMarker.setMap(map);
+
+	var openspaceMarker = new google.maps.Marker({
+		position: openspace,
+		title:"Pino Trailhead, enter wilderness"
+		});
+	openspaceMarker.setMap(map);
 }
