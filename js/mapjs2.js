@@ -220,7 +220,7 @@ function initialize() {
     },
 	styles: [{
       polygonOptions: {
-      fillOpacity: 0.2
+      fillOpacity: 0.37
 	  }
       }]
   });
