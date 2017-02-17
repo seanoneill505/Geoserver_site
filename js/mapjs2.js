@@ -217,7 +217,13 @@ function initialize() {
     query: {
       select: '\'geometry\'',
       from: '1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn'
-    }
+    },
+	styles: [{
+      polygonOptions: {
+      fillOpacity: 0.2
+	  }
+      }]
   });
   layer.setMap(map);
 }
+
