@@ -5,7 +5,9 @@ function initialize() {
 		zoom: 12,
 		center: pinotrail,
 		mapTypeId: google.maps.MapTypeId.TERRAIN,
+		
 		styles: [
+		
   {
     "elementType": "geometry",
     "stylers": [
@@ -189,10 +191,13 @@ function initialize() {
       {
         "color": "#17263c"
       }
+	  
     ]
   }
   ]
 		};
+		
+
 	var map = new google.maps.Map(
 		document.getElementById("map_canvas"), 
 		myOptions);
@@ -208,4 +213,11 @@ function initialize() {
 		title:"Pino Trailhead, enter wilderness"
 		});
 	openspaceMarker.setMap(map);
+	var layer = new google.maps.FusionTablesLayer({
+    query: {
+      select: '\'geometry\'',
+      from: '1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn'
+    }
+  });
+  layer.setMap(map);
 }
