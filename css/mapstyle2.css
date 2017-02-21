@@ -53,3 +53,4 @@ h4 {
 
 a[href^="https://maps.google.com/maps?"]{background-color: transparent !important}
 a[href^="https://www.google.com/intl/en-US_US/help/terms_maps.html"]{background-color: transparent !important}
+a[href^="https://www.google.com/maps/@47.6062,-122.3321,200558m/data=!3m1!1e3!10m2!1e3!2e10!12b1?rapsrc=apiv3"]{background-color: transparent !important}
