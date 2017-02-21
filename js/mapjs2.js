@@ -224,7 +224,7 @@ function initialize() {
 	goldenMarker.setMap(map);
 	var guiterrezMarker = new google.maps.Marker({
 		position: guiterrez,
-		title:"Guiterrez Open Space"
+		title:"Guiterrez Canyon Open Space"
 		});
 	guiterrezMarker.setMap(map);
 	var bosqueMarker = new google.maps.Marker({
