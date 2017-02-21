@@ -209,7 +209,7 @@ function initialize() {
 
 	var juanthomasMarker = new google.maps.Marker({
 		position: juanthomas,
-		title:"Juan THomas Open Space"
+		title:"Juan Thomas Open Space"
 		});
 	juanthomasMarker.setMap(map);
 	var southfoothillsMarker = new google.maps.Marker({
