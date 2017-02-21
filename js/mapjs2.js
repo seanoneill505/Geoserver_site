@@ -1,6 +1,7 @@
 function initialize() {
 	var pinotrail = new google.maps.LatLng(35.1177076,-106.4869905)
 	var openspace = new google.maps.LatLng(35.165073,-106.4573935)
+	var southfoothills = new google.maps.LatLng(35.0872604,-106.4657967)
 	var myOptions = {
 		zoom: 11,
 		center: pinotrail,
@@ -207,10 +208,15 @@ function initialize() {
 		title:"Open Space"
 		});
 	pinotrailMarker.setMap(map);
+	var southfoothillsMarker = new google.maps.Marker({
+		position: southfoothills,
+		title:"South Foothills Open Space"
+		});
+	pinotrailMarker.setMap(map);
 
 	var openspaceMarker = new google.maps.Marker({
 		position: openspace,
-		title:"Pino Trailhead, enter wilderness"
+		title:"Pino Trailhead from Elena Gallegos"
 		});
 	openspaceMarker.setMap(map);
 	var layer = new google.maps.FusionTablesLayer({
