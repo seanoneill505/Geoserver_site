@@ -2,7 +2,7 @@ function initialize() {
 	var pinotrail = new google.maps.LatLng(35.1177076,-106.4869905)
 	var openspace = new google.maps.LatLng(35.165073,-106.4573935)
 	var myOptions = {
-		zoom: 13,
+		zoom: 11,
 		center: pinotrail,
 		mapTypeId: google.maps.MapTypeId.TERRAIN,
 		
