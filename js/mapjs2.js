@@ -5,6 +5,7 @@ function initialize() {
 	var golden = new google.maps.LatLng(35.270894,-106.3300395)
 	var guiterrez = new google.maps.LatLng(35.1256185,-106.3470961)
 	var bosque = new google.maps.LatLng(35.1856764,-106.6520627)
+	var juanthomas = new google.maps.LatLng(35.0023264,-106.3009887)
 	var myOptions = {
 		zoom: 11,
 		center: pinotrail,
@@ -206,11 +207,11 @@ function initialize() {
 		document.getElementById("map_canvas"), 
 		myOptions);
 
-	var pinotrailMarker = new google.maps.Marker({
-		position: pinotrail,
-		title:"Open Space"
+	var juanthomasMarker = new google.maps.Marker({
+		position: juanthomas,
+		title:"Juan THomas Open Space"
 		});
-	pinotrailMarker.setMap(map);
+	juanthomasMarker.setMap(map);
 	var southfoothillsMarker = new google.maps.Marker({
 		position: southfoothills,
 		title:"South Foothills Open Space"
