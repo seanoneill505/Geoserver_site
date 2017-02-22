@@ -203,27 +203,26 @@ function initialize() {
 		};
 		
 
-	var map = new google.maps.Map(
-		document.getElementById("map_canvas"), 
-		myOptions);
+	
 
 	
 		
 	
   
-	var layer1 = new google.maps.FusionTablesLayer({
-		map: map,
-    query: {
-      select: '\'geometry\'',
-      from: '1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn'
-    },
-	styles: [{
-      polygonOptions: {
-      fillOpacity: 0.37
-	  }
-      }]
-  });
-  layer2 = new google.maps.FusionTablesLayer({
+	var firstLayer = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col2",
+        from: "1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  var secondLayer = new google.maps.FusionTablesLayer({
       map: map,
       heatmap: { enabled: false },
       query: {
@@ -236,10 +235,10 @@ function initialize() {
         templateId: 2
       }
     });
-  var map = new google.maps.Map(
-  document.getElementById("map_canvas"),
-  mapOptions);
+	var map = new google.maps.Map(
+		document.getElementById("map_canvas"), 
+		myOptions); 
+  firstLayer.setMap(map);
+  secondLayer.setMap(map);
   
-  layer1.setMap(map);
-  layer2.setMap(map);
 }
