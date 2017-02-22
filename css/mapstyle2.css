@@ -38,7 +38,10 @@ text-align: center;
 	padding-top:10px;
 
 }
- a:link, 
+.infoBox { 
+	color:black }
+
+  h4 a:link, 
 	a:visited {
 		background: linear-gradient(white, grey);
 		color: black;
@@ -52,4 +55,7 @@ h4 {
 	font-size: medium;
 	text-align: center;
 	}
+	a[href^="https://maps.google.com/maps?ll=35.141855,-106.459525&z=11&t=p&hl=en-US&gl=US&mapclient=apiv3"]{background-color: transparent !important}
+a[href^="https://www.google.com/intl/en-US_US/help/terms_maps.html"]{background-color: transparent !important}
+a[href^="https://www.google.com/maps/@35.1418553,-106.4595247,11z/data=!5m1!1e4!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3"]{background-color: transparent !important}
 
