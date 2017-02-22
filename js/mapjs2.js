@@ -207,39 +207,12 @@ function initialize() {
 		document.getElementById("map_canvas"), 
 		myOptions);
 
-	var juanthomasMarker = new google.maps.Marker({
-		position: juanthomas,
-		title:"Juan Thomas Open Space"
-		});
-	juanthomasMarker.setMap(map);
-	var southfoothillsMarker = new google.maps.Marker({
-		position: southfoothills,
-		title:"South Foothills Open Space"
-		});
-	southfoothillsMarker.setMap(map);
-	var goldenMarker = new google.maps.Marker({
-		position: golden,
-		title:"Golden Open Space"
-		});
-	goldenMarker.setMap(map);
-	var guiterrezMarker = new google.maps.Marker({
-		position: guiterrez,
-		title:"Guiterrez Canyon Open Space"
-		});
-	guiterrezMarker.setMap(map);
-	var bosqueMarker = new google.maps.Marker({
-		position: bosque,
-		title:"Bosque Open Space"
-		});
-	bosqueMarker.setMap(map);
-
-
-	var openspaceMarker = new google.maps.Marker({
-		position: openspace,
-		title:"Pino Trailhead from Elena Gallegos"
-		});
-	openspaceMarker.setMap(map);
-	var layer = new google.maps.FusionTablesLayer({
+	
+		
+	
+  
+	var layer1 = new google.maps.FusionTablesLayer({
+		map: map,
     query: {
       select: '\'geometry\'',
       from: '1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn'
@@ -250,5 +223,23 @@ function initialize() {
 	  }
       }]
   });
-  layer.setMap(map);
+  layer2 = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col1",
+        from: "14nrB7Fceuxi-3OCRcWNUUlKokRV8KRUD42vkNkca",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  var map = new google.maps.Map(
+  document.getElementById("map_canvas"),
+  mapOptions);
+  
+  layer1.setMap(map);
+  layer2.setMap(map);
 }
