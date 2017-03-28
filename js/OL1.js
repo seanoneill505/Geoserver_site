@@ -2,7 +2,7 @@ var myMap = new ol.Map({
 	target: 'map_canvas',
 	layers: [
   		new ol.layer.Tile({
-            source: new ol.source.OSM()
+            source: new ol.source.Stamen({layer: 'terrain'})
         })
 	],
 	view: new ol.View({
@@ -10,3 +10,4 @@ var myMap = new ol.Map({
 		zoom: 10
 		})
 	});
+setMapType('STAMEN_Terrain')
