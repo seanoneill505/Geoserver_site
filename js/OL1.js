@@ -1,12 +1,12 @@
 var myMap = new ol.Map({
- target: 'map',
- layers: [
- new ol.layer.Tile({
- source: new ol.source.OSM()
-})
- ],
- view: new ol.View({
- center: ol.proj.fromLonLat([-106.624083,35.08427]),
- zoom: 18
- })
-});
+	target: 'map_canvas',
+	layers: [
+  		new ol.layer.Tile({
+            source: new ol.source.OSM()
+        })
+	],
+	view: new ol.View({
+		center: ol.proj.fromLonLat([-107.22,37.51]),
+		zoom: 10
+		})
+	});
