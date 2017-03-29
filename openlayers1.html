@@ -18,8 +18,12 @@
 <body>
 		<div id="title"><h1>My Geography 585L Open Layers Map Page</h1></div>
 		<h4><p><a href="index-styled.html">Home</a>
-		></p></h4>
+		</p></h4>
 			<div id="map_canvas"></div>
+				<div id="map_control">
+        <p><a onclick="setMapType('STAMEN_terrain')">Terrain</a> |
+		<a onclick="setMapType('watercolor')">Watercolor</a></p>
+      </div>
 			<script src="js/OL1.js"></script>
 			<script async="" defer="" src="">
     	</script>
