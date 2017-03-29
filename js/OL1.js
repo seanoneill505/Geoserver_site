@@ -13,6 +13,13 @@ var Layer_watercolor = new ol.layer.Group({
         })
     ]
 });
+var Layer_toner = new ol.layer.Group({
+    layers: [
+        new ol.layer.Tile({
+            source: new ol.source.Stamen({layer: 'toner'})
+        })
+    ]
+});
 
 var map = new ol.Map({
   target: 'map_canvas',
@@ -27,6 +34,8 @@ function setMapType(newType) {
         map.setLayerGroup(Layer_watercolor);
     } else if (newType == 'STAMEN_terrain') {
         map.setLayerGroup(Layer_Stamen_terrain);
+	}	else if (newType == 'toner') {
+        map.setLayerGroup(Layer_toner);
     }
 }
 
