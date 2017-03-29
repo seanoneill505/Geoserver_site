@@ -29,7 +29,7 @@ text-align: center;
 #map_control {
   position: relative;
   z-index: 101;
-
+}
 #main {
 	border: 2px solid black;
 	width: 70%;
