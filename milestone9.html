@@ -1,25 +1,40 @@
+<!DOCTYPE html>
+
 <html>
 
-<head>
-	<link rel="stylesheet" href="css/OpenLayers_01.css" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.css" type="text/css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.js" type="text/javascript"></script>
-</head>
-
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Sean O'Neill 585L</title>
+		<link rel="stylesheet" type="text/css" href="css/milestone9.css"> 
+		<link rel="stylesheet" href="https://openlayers.org/en/v4.0.1/css/ol.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.js"></script>
+   
+		<style type=text/css>
+			
+			
+		</style>
+	</head>
 <body>
-	<h1>This is an OpenLayers 4 sample map page illustrating a variety of vector maps</h1>
-
-	<h2>KML Layer - Counties and Blocks - KML styling</h2>
-	<div id='map_kml' class='map'><!-- This is where the map will be displayed --></div>
-	
-	<h2>KML Layer - Counties and Blocks - Local Styling</h2>
-	<div id='map_kml_styled' class='map'><!-- This is where the map will be displayed --></div>
-	
-	<h2>Locally defined features</h2>
-	<div id='map_local' class='map'><!-- This is where the map will be displayed --></div>
-	
-	
-	<!-- import the external Javascript file with the map configuration code -->
-</body>
-
+		<div id="title"><h1>My Geography 585L Open Layers Styled Map Page</h1>
+		<p>This is the southern San juan Mountain range region in Southern Colorado.  I've chosen this region because it is one of my most coveted areas to camp, ski, and bike.  My baselayer is Stamen Terrain, so the user can see the topgraphy of the region.  Also included is watercolor, for artististic value, and Stamen Toner, for more detail on the cities and towns in the region.</p></div>
+		<h4><p><a href="index-styled.html">Home</a>
+		</p></h4>
+		<div id="map_control">
+        <p><a onclick="setMapType('STAMEN_terrain')">Terrain</a> |
+		<a onclick="setMapType('watercolor')">Watercolor</a> |
+		<a onclick="setMapType('toner')">Toner</a> 
+		</p>
+			<div id="map_canvas"></div>
+				
+      </div>
+			<script src="js/milestone9.js"></script>
+			<script async="" defer="" src="">
+    	</script>
+		
+		
+		
+		
+		
+	</body>
 </html>
