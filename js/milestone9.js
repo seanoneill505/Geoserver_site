@@ -24,7 +24,7 @@ var lake6_color = [255,0,127,.75]
 var froad_style = new ol.style.Style({
 		stroke: new ol.style.Stroke({
 	  color: froad_color,
-	  width: 2
+	  width: 5
 	}),
 });
 
@@ -267,11 +267,27 @@ var Coloradotforestroads = new ol.layer.Tile({
 		url: 'https://services.nationalmap.gov/arcgis/services/transportation/MapServer/WmsServer?',
 		serverType: 'geoserver',
 		projection: projection,
-		extractStyles:false
-			
-		}),
+		format: new ol.format.KML({
+			extractStyles:true
+		})
+	}),
 	style: froad_style
+})
 
+var Coloradotfrnumbers = new ol.layer.Tile({
+	source: new ol.source.TileWMS({
+		attributions: new ol.Attribution({
+			html: '12'
+		}),
+		params: {'LAYERS':'12'},
+		url: 'https://services.nationalmap.gov/arcgis/services/transportation/MapServer/WmsServer?',
+		serverType: 'geoserver',
+		projection: projection,
+		format: new ol.format.KML({
+			extractStyles:false
+		})
+	}),
+	style: froad_style
 })
 
 var Coloradoroads = new ol.layer.Tile({
@@ -384,7 +400,7 @@ var meadows_geom = new ol.layer.Vector({
 
 var map = new ol.Map({
   target: 'map_canvas',
-  layers: [ Layer_Stamen_terrain,colomunicipal, colocounties, Coloradoeco, Coloradoroads, Coloradotforestroads, local_geoms, Plat_geom, rio_geom, will_geom, meadows_geom],
+  layers: [ Layer_Stamen_terrain,colomunicipal, colocounties, Coloradoeco, Coloradoroads, Coloradotforestroads, Coloradotfrnumbers, local_geoms, Plat_geom, rio_geom, will_geom, meadows_geom],
   view: new ol.View({
     center: ol.proj.fromLonLat([-107.22,37.51]), 
     zoom: 10
