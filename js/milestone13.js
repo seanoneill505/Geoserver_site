@@ -234,10 +234,10 @@ var basemap_tiled = new ol.layer.Tile({
 var Coloradowms = new ol.layer.Tile({
 	source: new ol.source.TileWMS({
 		attributions: new ol.Attribution({
-			html: 'USGS_EROS_Ortho_1Foot'
+			html: 'USFS Wilderness area 3'
 		}),
-		params: {'LAYERS':'0'},
-		url: 'https://isse.cr.usgs.gov/arcgis/services/Orthoimagery/USGS_EROS_Ortho_1Foot/ImageServer/WMSServer',
+		params: {'LAYERS':'SO_County_ Style1'},
+		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection
 	})
@@ -258,49 +258,50 @@ var Coloradoeco = new ol.layer.Tile({
 	}),
 	style: block_line_color
 })
-var Coloradotforestroads = new ol.layer.Tile({
+var USFSNM = new ol.layer.Tile({
 	source: new ol.source.TileWMS({
 		attributions: new ol.Attribution({
 			html: '4'
 		}),
-		params: {'LAYERS':'4'},
-		url: 'https://services.nationalmap.gov/arcgis/services/transportation/MapServer/WmsServer?',
-		serverType: 'geoserver',
-		projection: projection,
-		format: new ol.format.KML({
-			extractStyles:true
-		})
-	}),
-	style: froad_style
-})
-
-var Coloradotfrnumbers = new ol.layer.Tile({
-	source: new ol.source.TileWMS({
-		attributions: new ol.Attribution({
-			html: '12'
-		}),
-		params: {'LAYERS':'12'},
-		url: 'https://services.nationalmap.gov/arcgis/services/transportation/MapServer/WmsServer?',
+		params: {'LAYERS':'ws_ronbeel:USFS_admin_bndR3'},
+		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection,
 		format: new ol.format.KML({
 			extractStyles:false
 		})
 	}),
-	style: froad_style
+	style: Lake_style
 })
 
-var Coloradoroads = new ol.layer.Tile({
+var NMwilderness3 = new ol.layer.Tile({
+	source: new ol.source.TileWMS({
+		attributions: new ol.Attribution({
+			html: '12'
+		}),
+		params: {'LAYERS':'ws_ronbeel:nlcs_wilderness_areas_2014'},
+		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+		serverType: 'geoserver',
+		projection: projection,
+		format: new ol.format.KML({
+			extractStyles:false
+		})
+	}),
+	style: Lake_style
+})
+
+var NMwilderness = new ol.layer.Tile({
 	source: new ol.source.TileWMS({
 		attributions: new ol.Attribution({
 			html: '7'
 		}),
-		params: {'LAYERS':'7'},
-		url: 'https://services.nationalmap.gov/arcgis/services/transportation/MapServer/WmsServer?',
+		params: {'LAYERS':'ws_ronbeel:USFSRegion3Wilderness'},
+		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection
 		
 	}),
+	style: Lake_style
 })
 
 
@@ -310,8 +311,8 @@ var states_single = new ol.layer.Image({
 		attributions: new ol.Attribution({
 			html: 'State Boundary Restructured - USGS, National Atlas Release 5-14-12'
 		}),
-		params: {'LAYERS':'global:statep010'},
-		url: 'http://mapper.internetmapping.net:8081/geoserver/global/wms?',
+		params: {'LAYERS':'ws_ronbeel:nm_cont_div'},
+		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver'
 	})
 })
@@ -400,10 +401,10 @@ var meadows_geom = new ol.layer.Vector({
 
 var map = new ol.Map({
   target: 'map_canvas',
-  layers: [ Layer_Stamen_terrain,colomunicipal, colocounties, Coloradoeco, Coloradoroads, Coloradotforestroads, Coloradotfrnumbers, local_geoms, Plat_geom, rio_geom, will_geom, meadows_geom],
+  layers: [ Layer_Stamen_terrain,colomunicipal, colocounties, Coloradoeco, USFSNM, NMwilderness, local_geoms, Plat_geom, rio_geom, will_geom, meadows_geom, states_single,  NMwilderness3],
   view: new ol.View({
-    center: ol.proj.fromLonLat([-107.22,37.51]), 
-    zoom: 10
+    center: ol.proj.fromLonLat([-105.918167,34.593986]), 
+    zoom: 7
 	
   })
 });
