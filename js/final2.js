@@ -19,7 +19,7 @@ var SO35106A6 = new ol.layer.Tile({
 		attributions: new ol.Attribution({
 			html: '4'
 		}),
-		params: {'LAYERS':'ws_ronbeel:SO_35106-A6'},
+		params: {'LAYERS':'ws_ronbeel:SO_35106-A5_CONTV2'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection,
@@ -35,7 +35,7 @@ var SO35106A5 = new ol.layer.Tile({
 		attributions: new ol.Attribution({
 			html: '12'
 		}),
-		params: {'LAYERS':'	ws_ronbeel:SO_35106-A5'},
+		params: {'LAYERS':'	ws_ronbeel:SO_35106-A6_CONTV2'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection,
@@ -91,7 +91,7 @@ var SOtgr2006sebernlka = new ol.layer.Image({
 
 var map = new ol.Map({
   target: 'map_canvas',
-  layers: [ Layer_Stamen_terrain, SO35106A5, SO35106A6, SO35106A5CONT, SO35106A6CONT, SOtgr2006sebernlka  ],
+  layers: [ Layer_Stamen_terrain, SO35106A5, SO35106A6 ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.6298957,35.0754534]), 
     zoom: 12
