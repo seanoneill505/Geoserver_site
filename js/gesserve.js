@@ -19,8 +19,8 @@ var SO35106A6 = new ol.layer.Tile({
 		attributions: new ol.Attribution({
 			html: '4'
 		}),
-		params: {'LAYERS':'ws_ronbeel:SO_35106-A5_CONTV2'},
-		url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+		params: {'LAYERS':'GEM:Peteroglyph_Boundary'},
+		url: 'http://129.24.65.137:8080/geoserver/ows?SERVICE=WMS&',
 		serverType: 'geoserver',
 		projection: projection,
 		format: new ol.format.KML({
