@@ -91,7 +91,7 @@ var SOtgr2006sebernlka = new ol.layer.Image({
 
 var map = new ol.Map({
   target: 'map_canvas',
-  layers: [ Layer_Stamen_terrain, SO35106A5, SO35106A6 ],
+  layers: [ Layer_Stamen_terrain, SO35106A6 ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.6298957,35.0754534]), 
     zoom: 12
