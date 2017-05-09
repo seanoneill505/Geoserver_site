@@ -93,7 +93,7 @@ var map = new ol.Map({
   target: 'map_canvas',
   layers: [ Layer_Stamen_terrain, SO35106A6 ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([-106.6298957,35.0754534]), 
+    center: ol.proj.fromLonLat([-106.6397467,35.1432324]), 
     zoom: 12
 	
   })
