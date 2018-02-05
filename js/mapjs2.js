@@ -214,7 +214,7 @@ function initialize() {
       heatmap: { enabled: false },
       query: {
         select: "col2",
-        from: "1t_O7-oLOWMDIeuJDvnTG1PLYizjz_6fa9l-NuaMn",
+        from: "1KcJ2ugfGSGpsVTgoeqpsdl-i2-maFyWIRKwGZQqg",
         where: ""
       },
       options: {
